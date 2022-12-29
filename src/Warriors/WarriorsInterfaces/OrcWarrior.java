@@ -1,4 +1,4 @@
-package Warriors.Types;
+package Warriors.WarriorsInterfaces;
 
 import Warriors.Warrior;
 
