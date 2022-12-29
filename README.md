@@ -11,6 +11,8 @@
 Можете свободно использовать этот код в любых целях, также если будете добавлять
 нечто интересное от себя, можете смело отправлять Pull Request
 
+Для запуска открывайте Main.java
+
 # English
 
 Abstract Factory pattern Java implementation
@@ -21,3 +23,5 @@ the following playable characters: Human, Orc, Wizard, Troll
 
 You are free to use this code for any purpose.
 If you add something interesting from yourself, feel free to send a Pull Request :)
+
+Open Main.java to run
