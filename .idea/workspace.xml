@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2618d192-bee3-4af5-a7ac-15f840e9939b" name="Changes" comment="Warrior iterfaces was added">
-      <change afterPath="$PROJECT_DIR$/src/Warriors/Types/WarriorType.java" afterDir="false" />
+    <list default="true" id="2618d192-bee3-4af5-a7ac-15f840e9939b" name="Changes" comment="abstract factory created">
+      <change afterPath="$PROJECT_DIR$/src/Warriors/GoodWarriors/GoodHumanWarrior.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Warriors/GoodWarriors/GoodOrcWarrior.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Warriors/GoodWarriors/GoodTrollWarrior.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Warriors/GoodWarriors/GoodWizardWarrior.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Warriors/Warrior.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Warriors/Warrior.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +97,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672326186502</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="abstract factory created">
+      <created>1672326821522</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1672326821522</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -111,6 +123,7 @@
     <MESSAGE value="README refactored" />
     <MESSAGE value="Warrior interface added" />
     <MESSAGE value="warriors types refactoring" />
-    <option name="LAST_COMMIT_MESSAGE" value="warriors types refactoring" />
+    <MESSAGE value="abstract factory created" />
+    <option name="LAST_COMMIT_MESSAGE" value="abstract factory created" />
   </component>
 </project>
