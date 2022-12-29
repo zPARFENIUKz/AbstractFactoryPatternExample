@@ -1,4 +1,4 @@
-package Factory.GoodFactory;
+package Factory.GoodWarriorFactory;
 
 import Factory.WarriorFactory;
 import Warriors.GoodWarriors.GoodHumanWarrior;
