@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2618d192-bee3-4af5-a7ac-15f840e9939b" name="Changes" comment="pushed">
-      <change beforePath="$PROJECT_DIR$/src/Factory/GoodFactory/GoodWarriorFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Factory/GoodWarriorFactory/GoodWarriorFactory.java" afterDir="false" />
+    <list default="true" id="2618d192-bee3-4af5-a7ac-15f840e9939b" name="Changes" comment="small refactoring">
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -107,7 +106,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672330698125</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="small refactoring">
+      <created>1672331108238</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1672331108238</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -128,6 +134,7 @@
     <MESSAGE value="warriors types refactoring" />
     <MESSAGE value="abstract factory created" />
     <MESSAGE value="pushed" />
-    <option name="LAST_COMMIT_MESSAGE" value="pushed" />
+    <MESSAGE value="small refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="small refactoring" />
   </component>
 </project>
