@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2618d192-bee3-4af5-a7ac-15f840e9939b" name="Changes" comment="README refactored">
-      <change afterPath="$PROJECT_DIR$/src/Warriors/Warrior.java" afterDir="false" />
+    <list default="true" id="2618d192-bee3-4af5-a7ac-15f840e9939b" name="Changes" comment="Warrior interface added">
+      <change afterPath="$PROJECT_DIR$/src/Warriors/Types/HumanWarrior.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Warriors/Types/OrcWarrior.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Warriors/Types/TrollWarrior.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Warriors/Types/WizardWarrior.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,7 +22,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="WarriorsInterfaces" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -77,7 +80,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672321670606</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Warrior interface added">
+      <created>1672322053178</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1672322053178</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -94,6 +104,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="README created" />
     <MESSAGE value="README refactored" />
-    <option name="LAST_COMMIT_MESSAGE" value="README refactored" />
+    <MESSAGE value="Warrior interface added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Warrior interface added" />
   </component>
 </project>
