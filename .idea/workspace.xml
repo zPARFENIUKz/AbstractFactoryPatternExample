@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2618d192-bee3-4af5-a7ac-15f840e9939b" name="Changes" comment="abstract factory created">
+      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/Warriors/GoodWarriors/GoodHumanWarrior.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/Warriors/GoodWarriors/GoodOrcWarrior.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/Warriors/GoodWarriors/GoodTrollWarrior.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/Warriors/GoodWarriors/GoodWizardWarrior.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Warriors/Warrior.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Warriors/Warrior.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
