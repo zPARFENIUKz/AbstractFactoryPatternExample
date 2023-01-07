@@ -1,15 +1,15 @@
 package Warriors.GoodWarriors;
 
-import Warriors.WarriorsInterfaces.TrollWarrior;
+import Warriors.WarriorsInterfaces.WizardWarrior;
 
-public class GoodWizardWarrior implements TrollWarrior {
+public class GoodWizardWarrior implements WizardWarrior {
     @Override
     public void identifyOneself() {
         System.out.println("I'm a good Wizard");
     }
 
     @Override
-    public void doSomeTrollStuff() {
+    public void doSomeWizardStuff() {
         System.out.println("Doing some good Wizard stuff");
     }
 }

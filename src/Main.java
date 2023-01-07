@@ -1,5 +1,6 @@
 import Factory.EvilWarrioirFactory.EvilWarriorFactory;
 import Factory.GoodWarriorFactory.GoodWarriorFactory;
+import Factory.WarriorFactory;
 import Warriors.Types.WarriorType;
 import Warriors.Warrior;
 import Warriors.WarriorsInterfaces.HumanWarrior;
@@ -13,24 +14,14 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
         // Creating GoodWarriorFactory
-        final GoodWarriorFactory goodFactory = new GoodWarriorFactory();
+        final WarriorFactory goodFactory = new GoodWarriorFactory();
         // Creating Good Warriors
-        final List<Warrior> goodWarriors = new ArrayList<>() {{
-            add(goodFactory.createWarrior(WarriorType.HUMAN));
-            add(goodFactory.createWarrior(WarriorType.ORC));
-            add(goodFactory.createWarrior(WarriorType.TROLL));
-            add(goodFactory.createWarrior(WarriorType.WIZARD));
-        }};
+        final List<Warrior> goodWarriors = createWarriors(goodFactory);
 
         // Creating EvilWarriorFactory
-        final EvilWarriorFactory evilFactory = new EvilWarriorFactory();
+        final WarriorFactory evilFactory = new EvilWarriorFactory();
         // Creating Evil Warriors
-        final List<Warrior> evilWarriors = new ArrayList<>() {{
-            add(evilFactory.createWarrior(WarriorType.HUMAN));
-            add(evilFactory.createWarrior(WarriorType.ORC));
-            add(evilFactory.createWarrior(WarriorType.TROLL));
-            add(evilFactory.createWarrior(WarriorType.WIZARD));
-        }};
+        final List<Warrior> evilWarriors = createWarriors(evilFactory);
 
         // Print Good Warriors
         System.out.println("Good Warriors: ");
@@ -56,6 +47,15 @@ public class Main {
                 wizardWarrior.doSomeWizardStuff();
             }
         }
+    }
+
+    private static List<Warrior> createWarriors(WarriorFactory factory) {
+        return new ArrayList<>() {{
+            add(factory.createWarrior(WarriorType.HUMAN));
+            add(factory.createWarrior(WarriorType.ORC));
+            add(factory.createWarrior(WarriorType.TROLL));
+            add(factory.createWarrior(WarriorType.WIZARD));
+        }};
     }
 
 
