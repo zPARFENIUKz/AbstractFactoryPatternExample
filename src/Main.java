@@ -1,62 +1,38 @@
+import Battle.Battle;
+import Battle.BattleGenerator.BattleGenerator;
+import Battle.BattleGenerator.DefaultBattleGenerator;
 import Factory.EvilWarrioirFactory.EvilWarriorFactory;
 import Factory.GoodWarriorFactory.GoodWarriorFactory;
 import Factory.WarriorFactory;
-import Warriors.Types.WarriorType;
-import Warriors.Warrior;
-import Warriors.WarriorsInterfaces.HumanWarrior;
-import Warriors.WarriorsInterfaces.OrcWarrior;
-import Warriors.WarriorsInterfaces.TrollWarrior;
-import Warriors.WarriorsInterfaces.WizardWarrior;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.lang.reflect.InvocationTargetException;
 
 public class Main {
     public static void main(String[] args) {
-        // Creating GoodWarriorFactory
-        final WarriorFactory goodFactory = new GoodWarriorFactory();
-        // Creating Good Warriors
-        final List<Warrior> goodWarriors = createWarriors(goodFactory);
-
-        // Creating EvilWarriorFactory
-        final WarriorFactory evilFactory = new EvilWarriorFactory();
-        // Creating Evil Warriors
-        final List<Warrior> evilWarriors = createWarriors(evilFactory);
-
-        // Print Good Warriors
-        System.out.println("Good Warriors: ");
-        printWarriors(goodWarriors);
-        System.out.println("###########################");
-
-        // Print Evil Warriors
-        System.out.println("Evil Warriors: ");
-        printWarriors(evilWarriors);
-        System.out.println("###########################");
+        createAndStartBattle(GoodWarriorFactory.class, EvilWarriorFactory.class, DefaultBattleGenerator.class);
     }
 
-    private static void printWarriors(List<Warrior> warriors) {
-        for (final Warrior warrior : warriors) {
-            warrior.identifyOneself();
-            if (warrior instanceof HumanWarrior humanWarrior) {
-                humanWarrior.doSomeHumanStuff();
-            } else if (warrior instanceof OrcWarrior orcWarrior) {
-                orcWarrior.doSomeOrcType();
-            } else if (warrior instanceof TrollWarrior trollWarrior) {
-                trollWarrior.doSomeTrollStuff();
-            } else if (warrior instanceof WizardWarrior wizardWarrior) {
-                wizardWarrior.doSomeWizardStuff();
-            }
+    private static void createAndStartBattle(Class<? extends WarriorFactory> firstWarriorFactoryClass,
+                                             Class<? extends WarriorFactory> secondWarriorFactoryClass,
+                                             Class<? extends BattleGenerator> battleGeneratorClass)
+    {
+        final WarriorFactory factory1;
+        final WarriorFactory factory2;
+        final BattleGenerator battleGenerator;
+        try {
+            factory1 = firstWarriorFactoryClass
+                    .getDeclaredConstructor()
+                    .newInstance();
+            factory2 = secondWarriorFactoryClass
+                    .getDeclaredConstructor()
+                    .newInstance();
+            battleGenerator = battleGeneratorClass
+                    .getConstructor(WarriorFactory.class, WarriorFactory.class)
+                    .newInstance(factory1, factory2);
+        } catch (InstantiationException | InvocationTargetException | IllegalAccessException | NoSuchMethodException e) {
+            throw new RuntimeException(e);
         }
+        Battle battle = battleGenerator.createBattle();
+        battle.battle();
     }
-
-    private static List<Warrior> createWarriors(WarriorFactory factory) {
-        return new ArrayList<>() {{
-            add(factory.createWarrior(WarriorType.HUMAN));
-            add(factory.createWarrior(WarriorType.ORC));
-            add(factory.createWarrior(WarriorType.TROLL));
-            add(factory.createWarrior(WarriorType.WIZARD));
-        }};
-    }
-
-
 }
